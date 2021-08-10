@@ -2,6 +2,8 @@
 
 ## lumpia
 
+Yang dipergunakan dalam dokumentasi ini adalah versi stabil, yakni `lumpia`.
+
 huruf besar kecil adalah beda (pengaruh) pada saat coding.
 
 ### init
