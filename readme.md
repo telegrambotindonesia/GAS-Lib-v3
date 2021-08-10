@@ -70,26 +70,14 @@ Jika terdapat nomor minor yang lompat (tidak ada), berarti dicabut rilisnya. Bis
 ## Quick Start
 
 ```javascript
-// jika ingin menyembungikan token, gunakan userDB
-const token = '123456789:abcdefghijklmnopqrstuvwxyz'; // ganti dengan token bot mu
-const adminbot = 213567634; // ganti dengan id kamu
+const bot = new lumpia.init(tokenbot);
 
-// inisiasi
-const bot = new lumpia.init(token, { log_id: adminbot });
-const helper = lumpia.helper;
-
-// handle pesan POST
 function doPost(e) {
   bot.doPost(e);
 }
 
 bot.start(ctx => ctx.reply('Started!'));
-
 bot.cmd('ping', ctx => ctx.replyIt('Pong!'));
-
-// user: helo, halo, haloooo
-bot.hears(/h+[ae]+l+o+/i, ctx => ctx.replyIt('Halo juga!'));
-
 ```
 
 contoh lainnya bisa di cek pada folder [examples](https://github.com/telegrambotindonesia/GAS-Lib-v3/tree/main/examples)
@@ -121,7 +109,7 @@ Harus disertakan keterangan ya.
 
 - Diskusi dan sharing via Grup Telegram [@botIndonesia]
 
-Jika ada bugs, silakan [create issue](https://github.com/telegrambotindonesia/GAS-Lib-v3/issues/new/choose) pada repository.
+Jika ada bugs, silakan [buat issue baru](https://github.com/telegrambotindonesia/GAS-Lib-v3/issues/new/choose).
 
 [Telegram]: https://www.telegram.org
 [GAS]: https://developers.google.com/apps-script
