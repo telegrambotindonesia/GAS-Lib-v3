@@ -32,15 +32,15 @@ Adalah versi stabil dari GASLibv3.
 
 Semua dokumentasi menggunakan acuan ini.
 
-- Legacy: `__`
-- New: `___`
+- Legacy: `M8TSsh_jLA7IF9z56e2gGo_vg_do21SJR`
+- New: `1fY_uq7bVUj_3VjQmYzizNt8rCVG11PeDvTC2OsbmHL_30tj34oCFdxnT`
 
 ### bakpia
 
 adalah versi beta, digunakan hanya oleh pengembang buat bahan testing.
 
-- Legacy: `__`
-- New: `__`
+- Legacy: `M2iDAxzI3JJ4n6a8sryWJsfvg_do21SJR`
+- New: `1OSN8eNlJtw2ehf3ul7h48Jb8rdeljKhC5Rw3cJo4nkEFITdS01Di0N_S`
 
 
 ## Versi
