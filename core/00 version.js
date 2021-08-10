@@ -48,7 +48,7 @@ const app = {
     },
     beta: {
         name: 'bapia',
-        build: 3,
+        build: 4,
         id: {
             legacy: 'M2iDAxzI3JJ4n6a8sryWJsfvg_do21SJR',
             new: '1OSN8eNlJtw2ehf3ul7h48Jb8rdeljKhC5Rw3cJo4nkEFITdS01Di0N_S'
