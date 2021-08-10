@@ -32,15 +32,15 @@ Adalah versi stabil dari GASLibv3.
 
 Semua dokumentasi menggunakan acuan ini.
 
-- Legacy: `M8TSsh_jLA7IF9z56e2gGo_vg_do21SJR`
-- New: `1fY_uq7bVUj_3VjQmYzizNt8rCVG11PeDvTC2OsbmHL_30tj34oCFdxnT`
+- Legacy: `MUD_wfLskZT2D99lRXLh94vvg_do21SJR`
+- New: `1VrueIocs0aRm3wpZvCgKkK5_7e_MvLSNYeftHm5JX_hgvkvgEoABl_JU`
 
 ### bakpia
 
 adalah versi beta, digunakan hanya oleh pengembang buat bahan testing.
 
 - Legacy: `M2iDAxzI3JJ4n6a8sryWJsfvg_do21SJR`
-- New: `1OSN8eNlJtw2ehf3ul7h48Jb8rdeljKhC5Rw3cJo4nkEFITdS01Di0N_S`
+- New: `1Yo6vQRwjG5Gl9jeEF0g2tBTUa0XN5MyT4G_HeDpRr9DvabxhRcSdhPNj`
 
 
 ## Versi
@@ -92,6 +92,7 @@ bot.hears(/h+[ae]+l+o+/i, ctx => ctx.replyIt('Halo juga!'));
 
 ```
 
+contoh lainnya bisa di cek pada folder [examples](https://github.com/telegrambotindonesia/GAS-Lib-v3/tree/main/examples)
 
 ## Dokumentasi
 
