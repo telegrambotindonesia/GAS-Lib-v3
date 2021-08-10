@@ -121,7 +121,7 @@ Harus disertakan keterangan ya.
 
 - Diskusi dan sharing via Grup Telegram [@botIndonesia]
 
-Jika ada bugs, silakan [create issue](https://github.com/telegrambotindonesia/GASLibv3/issues/new/choose) pada repository.
+Jika ada bugs, silakan [create issue](https://github.com/telegrambotindonesia/GAS-Lib-v3/issues/new/choose) pada repository.
 
 [Telegram]: https://www.telegram.org
 [GAS]: https://developers.google.com/apps-script
