@@ -1,12 +1,11 @@
-
-function doPost(e) {
-  bot.doPost(e);
-}
-
 var token = '1234:abcedefghij';
 
 const adminbot = 213567634; // your id
 const bot = new lumpia.init(token, { log_id: adminbot, prefix_command: '!/.' });
+
+function doPost(e) {
+  bot.doPost(e);
+}
 
 const button = lumpia.button,
   markup = lumpia.markup,
