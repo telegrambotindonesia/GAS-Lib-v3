@@ -1,10 +1,10 @@
-## lumpia
+## GAS Lib v3
 
-GAS Lib v3
+Google Apps Script Library for Telegram, edition 3rd.
 
 ## Pengantar
 
-### GAS Library versi 3 
+### GAS Library edisi ke-3 
 
 Adalah Library **Google Apps Script** ([GAS]) untuk [Telegram] edisi ke-3, merupakan suksesi dari GAS Library sebelumnya, yakni GASLib edisi 1 dan edisi 2 [Lib v2] yang telah berhasil banyak dimanfaatkan.
 

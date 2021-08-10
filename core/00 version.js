@@ -45,7 +45,7 @@ const app = {
     },
     beta : {
         name : 'bapia',
-        build: 1,
+        build: 2,
         id : {
             legacy: 'M2iDAxzI3JJ4n6a8sryWJsfvg_do21SJR',
             new: '1OSN8eNlJtw2ehf3ul7h48Jb8rdeljKhC5Rw3cJo4nkEFITdS01Di0N_S'
@@ -66,7 +66,7 @@ var version = {
     number: 3,
     name: app[active].name,
     build: app[active].build,
-    full: 'v3.' + code_build + (dev ? '-dev' : ''),
+    full: 'v3.' + app[active].build + (dev ? '-dev' : ''),
     group: '@botindonesia',
     url: 'https://github.com/telegrambotindonesia/GAS-Lib-v3'
 }
