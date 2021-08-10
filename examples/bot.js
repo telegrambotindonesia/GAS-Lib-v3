@@ -12,6 +12,16 @@ const button = lumpia.button,
   markup = lumpia.markup,
   helper = lumpia.helper;
 
+// middleware
+bot.use((ctx, next) => {
+  ctx.state.hooked = true;
+  next();
+})
+
+bot.cmd('hook', (ctx) => {
+  console.log(`Semua pesan ${ctx.state.hooked ? 'berhasil' : 'gagal'} dihooked!`);
+})
+
 
 bot.start(ctx => {
   // susun tombol keyboardnya, 1 dimensi array saja oke
