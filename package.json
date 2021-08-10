@@ -1,0 +1,11 @@
+{
+  "name": "gaslibv3_dev",
+  "version": "1.0.0",
+  "description": "GAS Lib v3 dev",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
