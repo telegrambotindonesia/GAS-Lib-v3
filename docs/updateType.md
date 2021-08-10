@@ -13,6 +13,7 @@ Tipe update tersedia adalah sebagai berikut. Keterangan masing-masing tipe ada d
 
 ### Type
 
+- raw (at `v2.0`)
 - message
 - edited_message
 - channel_post

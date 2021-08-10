@@ -63,7 +63,7 @@ class Composer extends EventEmitter {
         return this.addTrigger('action', this.setRegex(keys), callback);
     }
 
-    // handle trigger: cmd, hear, action
+    // handle tambahan trigger: cmd, hear, action
     addTrigger(type, keys, callback) {
         keys = this.setRegex(keys);
         let data = {
@@ -99,7 +99,7 @@ class Composer extends EventEmitter {
             let m = key.exec(text);
             if (m) {
                 match = m;
-                if (m.groups && m.groups.payload) payload = m.groups.payload;
+                if (m.groups?.payload) payload = m.groups.payload;
             }
         });
 
@@ -153,9 +153,9 @@ class Composer extends EventEmitter {
             let type = helper.typeCheck(key);
             if (type == 'regexp') return key;
 
-            if (type == 'string' || type == 'number' ) {
+            if (type == 'string' || type == 'number') {
                 //
-            } else { 
+            } else {
                 throw Error('Invalid key.');
             }
 

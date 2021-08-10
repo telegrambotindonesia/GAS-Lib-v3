@@ -1,13 +1,4 @@
-const Helper = {
-    typeCheck(value) {
-        const return_value = Object.prototype.toString.call(value);
-        // we can also use regex to do this...
-        const type = return_value.substring(
-            return_value.indexOf(" ") + 1,
-            return_value.indexOf("]"));
-
-        return type.toLowerCase();
-    },
+class Helper {
 
     /**
      * Checks if a given object has a property with a given name.
@@ -24,7 +15,7 @@ const Helper = {
 
     hasProp(obj, prop) {
         return obj && prop in obj;
-    },
+    }
 
     /**
      * Checks if a given object has a property with a given name.
@@ -43,7 +34,7 @@ const Helper = {
     hasPropType(obj, prop, type) {
         // eslint-disable-next-line valid-typeof
         return hasProp(obj, prop) && type === typeof obj[prop];
-    },
+    }
 
     compactOptions(options) {
         if (!options) {
@@ -53,19 +44,29 @@ const Helper = {
         const compactKeys = keys.filter((key) => options[key] !== undefined);
         const compactEntries = compactKeys.map((key) => [key, options[key]]);
         return Object.fromEntries(compactEntries);
-    },
+    }
 
     replacer(_, value) {
         if (value == null)
             return undefined;
         return value;
-    },
+    }
+
+    typeCheck(value) {
+        const return_value = Object.prototype.toString.call(value);
+        // we can also use regex to do this...
+        const type = return_value.substring(
+            return_value.indexOf(" ") + 1,
+            return_value.indexOf("]"));
+
+        return type.toLowerCase();
+    }
 
     isIn(array, index) {
         return (array.indexOf(index) > -1);
-    },
+    }
 
-    forEach: function (obj, fn) {
+    forEach(obj, fn) {
         // Don't bother if no value provided
         if (obj === null || typeof obj === 'undefined') {
             return;
@@ -90,9 +91,9 @@ const Helper = {
                 }
             }
         }
-    },
+    }
 
-    random: function () {
+    random() {
         // random(list) : item
         if (arguments.length === 1 && this.typeCheck(arguments[0]) == 'array') {
             var list = arguments[0];
@@ -108,49 +109,50 @@ const Helper = {
         }
 
         return false;
-    },
+    }
 
     //  blob = textBlob('namaFile', 'Hasanudin H Syafaat')
-    textBlob: function (namaFile, isiText, ext = '.txt', mime = MimeType.PLAIN_TEXT) {
+    textBlob(namaFile, isiText, extention = '.txt', mime = MimeType.PLAIN_TEXT) {
         return Utilities.newBlob('')
             .setDataFromString(isiText)
-            .setName(namaFile + ext)
+            .setName(namaFile + extention)
             .setContentType(mime);
-    },
+    }
 
-    outputText: function (text) {
+    outputText(text) {
         return ContentService.createTextOutput(text);
-    },
+    }
 
-    outputJSON: function (data) {
+    outputJSON(data) {
         return ContentService.createTextOutput(JSON.stringify(data)).setMimeType(ContentService.MimeType.JSON);
-    },
+    }
 
-    outputHTML: function (text) {
+    outputHTML(text) {
         return HtmlService.createHtmlOutput(text);
-    },
+    }
+
     /**
     Membersihkan tag HTML
     @param {string} text yang akan dibersihkan
     */
-    clearHTML: function (s) {
+    clearHTML(s) {
         return s
             .replace(/&/g, "&amp;")
             .replace(/</g, "&lt;")
             .replace(/>/g, "&gt;");
-    },
+    }
 
     /**
     Membersihkan tag Markdown
     @param {string} text yang akan dibersihkan
     */
-    clearMarkdown: function (s) {
+    clearMarkdown(s) {
         return s
             .replace(/_/g, "\\_")
             .replace(/\*/g, "\\*")
             .replace(/\[/g, "\\[")
             .replace(/`/g, "\\`");
-    },
+    }
 
     nama(data) {
         let first = data.first_name;
@@ -171,32 +173,32 @@ const Helper = {
             username,
             html,
         }
-    },
+    }
 
     name(...args) {
         return this.nama(...args);
-    },
+    }
 
 }
 
-var Button = {
-    text: function (text, data, hide = false) {
+class Button {
+    text(text, data, hide = false) {
         return { text, callback_data: data, hide }
-    },
+    }
     // inline = alias dari text
-    inline: function (text, data, hide = false) {
+    inline(text, data, hide = false) {
         return { text, callback_data: data, hide }
-    },
-    query: function (text, data) {
+    }
+    query(text, data) {
         return {
             text,
             switch_inline_query: data
         }
-    },
-    url: function (text, url, hide = false) {
+    }
+    url(text, url, hide = false) {
         return { text, url, hide }
     }
 }
 
-var helper = Helper;
-var button = Button;
+var helper = new Helper();
+var button = new Button();
