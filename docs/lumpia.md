@@ -1,10 +1,11 @@
 ## Versi
 
-## v2.0
+## v4.0
 
 - change: _prototype_  helper and button to _class_
 - publikasi class EventEmitter
 - shorthand `bot.tg` for `bot.telegram`
+- fix version number
 
 ### v1.0
 
