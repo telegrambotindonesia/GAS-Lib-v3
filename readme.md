@@ -28,6 +28,6 @@ bot.cmd('ping', ctx => ctx.replyIt('Pong!'));
 bot.hears(/hai/i, ctx => ctx.replyIt('Hi too!'));
 ```
 
-## Komunitas
+## Community
 
-- Telegram Group [@botIndonesia]
+- Telegram Group [@botIndonesia](https://t,.me/botindonesia)
