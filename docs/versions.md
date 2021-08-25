@@ -2,8 +2,9 @@
 
 ## v2.0
 
-- mengubah helper dan button _prototype_ menjadi _class_
+- change: _prototype_  helper and button to _class_
 - publikasi class EventEmitter
+- shorthand `bot.tg` for `bot.telegram`
 
 ### v1.0
 
