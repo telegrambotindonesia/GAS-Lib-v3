@@ -3,6 +3,7 @@
 ## v2.0
 
 - mengubah helper dan button _prototype_ menjadi _class_
+- publikasi class EventEmitter
 
 ### v1.0
 

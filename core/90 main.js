@@ -17,6 +17,10 @@ class Main extends Composer {
         return this.telegram.token;
     }
 
+    get tg() {
+        return this.telegram;
+    }
+
     handleUpdate(update) {
         // handle update tidak dibuatkan handle error
         // jika ingin direct handleUpdate, gunakan try catch sendiri
