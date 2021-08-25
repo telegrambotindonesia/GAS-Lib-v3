@@ -46,6 +46,14 @@ const app = {
         name: 'matoa',
         build: 1,
     },
+    stable: {
+        name: 'lumpia',
+        build: 1,
+        id: {
+            legacy: 'MUD_wfLskZT2D99lRXLh94vvg_do21SJR',
+            new: '1Yo6vQRwjG5Gl9jeEF0g2tBTUa0XN5MyT4G_HeDpRr9DvabxhRcSdhPNj'
+        }
+    },
     beta: {
         name: 'bapia',
         build: 5,
@@ -54,14 +62,6 @@ const app = {
             new: '1OSN8eNlJtw2ehf3ul7h48Jb8rdeljKhC5Rw3cJo4nkEFITdS01Di0N_S'
         }
     },
-    stable: {
-        name: 'lumpia',
-        build: 1,
-        id: {
-            legacy: 'MUD_wfLskZT2D99lRXLh94vvg_do21SJR',
-            new: '1Yo6vQRwjG5Gl9jeEF0g2tBTUa0XN5MyT4G_HeDpRr9DvabxhRcSdhPNj'
-        }
-    }
 }
 
 var version = {
