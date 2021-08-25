@@ -71,7 +71,7 @@ var version = {
     build: app[active].build,
     full: 'GASLibv3.' + app[active].build + (dev ? '-dev' : ''),
     group: '@botindonesia',
-    url: 'https://github.com/telegrambotindonesia/GAS-Lib-v3'
+    url: 'https://lumpia.banghasan.com'
 }
 
 // show logger log
