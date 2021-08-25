@@ -69,3 +69,5 @@ class EventEmitter {
         }
     }
 }
+
+var Event = EventEmitter;
