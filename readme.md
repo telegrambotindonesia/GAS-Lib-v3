@@ -2,7 +2,10 @@
 
 Google Apps Script Library for Telegram, edition 3rd.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/76bd2cdb-6128-489b-9172-73f2aca1f978/deploy-status)](https://app.netlify.com/sites/gaslib/deploys)
+
+![GitHub last commit](https://img.shields.io/github/last-commit/telegrambotindonesia/GAS-Lib-v3) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/telegrambotindonesia/GAS-Lib-v3) ![GitHub issues](https://img.shields.io/github/issues/telegrambotindonesia/GAS-Lib-v3) ![GAS](https://img.shields.io/badge/google-apps%20script-blue) ![javascript](https://img.shields.io/badge/lang-javascript-red) ![telegram botindonesia](https://img.shields.io/badge/telegram-@botindonesia-blue)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/76bd2cdb-6128-489b-9172-73f2aca1f978/deploy-status)](https://app.netlify.com/sites/gaslib/deploys) 
 
 ## ID Library
 
@@ -26,8 +29,10 @@ function doPost(e) {
 }
 
 bot.start(ctx => ctx.reply('Lets Go'));
+
 bot.cmd('ping', ctx => ctx.replyIt('Pong!'));
-bot.hears(/hai/i, ctx => ctx.replyIt('Hi too!'));
+
+bot.hears(/hello/i, ctx => ctx.replyIt('Hello too!'));
 ```
 
 ## Docs
