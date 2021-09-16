@@ -1,5 +1,6 @@
 /*
-    kelas utama pada matoa
+    kelas utama gas lib v3
+    matoa / bapia / lumpia
 */
 
 class Main extends Composer {
@@ -19,6 +20,10 @@ class Main extends Composer {
 
     get tg() {
         return this.telegram;
+    }
+
+    set log_id(id) {
+        this.options.log_id = id;
     }
 
     handleUpdate(update) {
