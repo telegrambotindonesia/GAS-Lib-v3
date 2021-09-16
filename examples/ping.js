@@ -14,5 +14,5 @@ bot.cmd('ping', (ctx, next) => {
 
   let msg_id = res.result.message_id;
 
-  bot.telegram.editMessageText(ctx.from.id, msg_id, null, `<b>Pong!</b> Proses <code>${time}</code> detik.`, { parse_mode: 'html' });
+  bot.telegram.editMessageText(ctx.chat.id, msg_id, null, `<b>Pong!</b> Proses <code>${time}</code> detik.`, { parse_mode: 'html' });
 })

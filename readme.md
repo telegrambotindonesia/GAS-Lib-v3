@@ -2,6 +2,8 @@
 
 Google Apps Script Library for Telegram, edition 3rd.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/76bd2cdb-6128-489b-9172-73f2aca1f978/deploy-status)](https://app.netlify.com/sites/gaslib/deploys)
+
 ## ID Library
 
 Frist Release : `10 Agustus 2021` / `1 Muharam 1443 H`
@@ -27,6 +29,10 @@ bot.start(ctx => ctx.reply('Lets Go'));
 bot.cmd('ping', ctx => ctx.replyIt('Pong!'));
 bot.hears(/hai/i, ctx => ctx.replyIt('Hi too!'));
 ```
+
+## Docs
+
+- [lumpia.js.org](https://lumpia.js.org)
 
 ## Community
 
