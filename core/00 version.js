@@ -38,8 +38,8 @@ Release public pertama kali :
 const dev = false;
 
 //const active = 'alpha';
-const active = 'beta';
-//const active = 'stable';
+//const active = 'beta';
+const active = 'stable';
 
 const app = {
     alpha: {
@@ -48,7 +48,7 @@ const app = {
     },
     stable: {
         name: 'lumpia',
-        build: 4,
+        build: 5,
         id: {
             legacy: 'MUD_wfLskZT2D99lRXLh94vvg_do21SJR',
             new: '1Yo6vQRwjG5Gl9jeEF0g2tBTUa0XN5MyT4G_HeDpRr9DvabxhRcSdhPNj'
@@ -69,7 +69,7 @@ var version = {
     number: 3,
     name: app[active].name,
     build: app[active].build,
-    full: 'GASLibv3.' + app[active].build + (dev ? '-dev' : ''),
+    full: 'GAS Lib v3.' + app[active].build + (dev ? '-dev' : ''),
     group: '@botindonesia',
     url: 'https://lumpia.banghasan.com'
 }
