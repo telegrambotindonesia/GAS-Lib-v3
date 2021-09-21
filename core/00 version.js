@@ -38,13 +38,15 @@ Release public pertama kali :
 const dev = false;
 
 //const active = 'alpha';
-//const active = 'beta';
-const active = 'stable';
+const active = 'beta';
+//const active = 'stable';
 
 const app = {
     alpha: {
         name: 'matoa',
         build: 1,
+        // matoa tidak memiliki id, karena pakai mode develop langsung di run
+        // dan tidak pernah di build
     },
     stable: {
         name: 'lumpia',
@@ -56,7 +58,7 @@ const app = {
     },
     beta: {
         name: 'bapia',
-        build: 6,
+        build: 7,
         id: {
             legacy: 'M2iDAxzI3JJ4n6a8sryWJsfvg_do21SJR',
             new: '1OSN8eNlJtw2ehf3ul7h48Jb8rdeljKhC5Rw3cJo4nkEFITdS01Di0N_S'
@@ -80,18 +82,3 @@ var verbose = false;
 // hook all message show json
 var DEBUG = false
 
-// biar gak keliru ma versi lokal
-// console diubah dulu jadi Logger
-
-// simpan console lama
-const _console = console;
-
-// ganti dengan Logger
-console = Logger;
-
-/*
- Note: karena udah diubah jadi Logger, maka harus berhati-hati
-
- console.log('satu', 'dua'); // dua tidak keluar
- console.log('satu' + 'dua'); // <- harus dibeginiin
-*/

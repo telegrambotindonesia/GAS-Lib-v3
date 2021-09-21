@@ -233,9 +233,8 @@ class Context {
     /**
     * @see https://core.telegram.org/bots/api#sendmessage
     */
-    replyIt(text, more) {
-        this.assert(this.chat, 'replyIt');
-        return this.telegram.sendMessage(this.chat.id, text, { reply_to_message_id: this.message.message_id, ...more });
+    replyIt(text, extra) {
+        return this.reply(text, { reply_to_message_id: this.message.message_id, ...extra });
     }
     /**
      * @see https://core.telegram.org/bots/api#getchat
@@ -405,6 +404,9 @@ class Context {
         this.assert(this.chat, 'replyWithPhoto');
         return this.telegram.sendPhoto(this.chat.id, ...args);
     }
+    replyItWithPhoto(photo, extra) {
+        return this.replyWithPhoto(photo, { reply_to_message_id: this.message.message_id, ...extra });
+    }
     /**
      * @see https://core.telegram.org/bots/api#replywithmediagroup
      */
@@ -418,6 +420,10 @@ class Context {
     replyWithAudio(...args) {
         this.assert(this.chat, 'replyWithAudio');
         return this.telegram.sendAudio(this.chat.id, ...args);
+    }
+
+    replyItWithAudio(audio, extra) {
+        return this.replyWithAudio(audio, { reply_to_message_id: this.message.message_id, ...extra });
     }
     /**
      * @see https://core.telegram.org/bots/api#replywithdice
@@ -433,12 +439,18 @@ class Context {
         this.assert(this.chat, 'replyWithDocument');
         return this.telegram.sendDocument(this.chat.id, ...args);
     }
+    replyItWithDocument(doc, extra) {
+        this.replyWithDocument(doc, { reply_to_message_id: this.message.message_id, ...extra });
+    }
     /**
      * @see https://core.telegram.org/bots/api#replywithsticker
      */
     replyWithSticker(...args) {
         this.assert(this.chat, 'replyWithSticker');
         return this.telegram.sendSticker(this.chat.id, ...args);
+    }
+    replyItWithSticker(sticker, extra) {
+        return this.replyWithSticker(sticker, { reply_to_message_id: this.message.message_id, ...extra });
     }
     /**
      * @see https://core.telegram.org/bots/api#replywithvideo
@@ -447,12 +459,18 @@ class Context {
         this.assert(this.chat, 'replyWithVideo');
         return this.telegram.sendVideo(this.chat.id, ...args);
     }
+    replyItWithVideo(video, extra) {
+        return this.replyWithVideo(video, { reply_to_message_id: this.message.message_id, ...extra });
+    }
     /**
      * @see https://core.telegram.org/bots/api#replywithanimation
      */
     replyWithAnimation(...args) {
         this.assert(this.chat, 'replyWithAnimation');
         return this.telegram.sendAnimation(this.chat.id, ...args);
+    }
+    replyItWithAnimation(animation, extra) {
+        return this.replyWithAnimation(animation, { reply_to_message_id: this.message.message_id, ...extra });
     }
     /**
      * @see https://core.telegram.org/bots/api#replywithvideonote
@@ -516,6 +534,10 @@ class Context {
     replyWithLocation(...args) {
         this.assert(this.chat, 'replyWithLocation');
         return this.telegram.sendLocation(this.chat.id, ...args);
+    }
+
+    replyItWithLocation(latitude, longitude, extra) {
+        return this.replyWithLocation(latitude, longitude, { reply_to_message_id: this.message.message_id, ...extra });
     }
     /**
      * @see https://core.telegram.org/bots/api#replywithvenue
@@ -614,17 +636,26 @@ class Context {
     replyWithMarkdown(markdown, extra) {
         return this.reply(markdown, { parse_mode: 'Markdown', ...extra });
     }
+    replyItWithMarkdown(markdown, extra) {
+        return this.replyIt(markdown, { parse_mode: 'Markdown', ...extra });
+    }
     /**
      * @see https://core.telegram.org/bots/api#sendmessage
      */
     replyWithMarkdownV2(markdown, extra) {
         return this.reply(markdown, { parse_mode: 'MarkdownV2', ...extra });
     }
+    replyItWithMarkdownV2(markdown, extra) {
+        return this.replyIt(markdown, { parse_mode: 'MarkdownV2', ...extra });
+    }
     /**
      * @see https://core.telegram.org/bots/api#sendmessage
      */
     replyWithHTML(html, extra) {
         return this.reply(html, { parse_mode: 'HTML', ...extra });
+    }
+    replyItWithHTML(text, extra) {
+        return this.replyIt(text, { parse_mode: 'HTML', ...extra });
     }
     /**
      * @see https://core.telegram.org/bots/api#deletemessage
