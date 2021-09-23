@@ -1,11 +1,11 @@
 {
-  "name": "gaslibv3_dev",
-  "version": "1.0.0",
-  "description": "GAS Lib v3 dev",
-  "main": "main.js",
+  "name": "gaslibv3",
+  "version": "3.6.0",
+  "description": "GAS Lib v3 - lumpia",
+  "main": "none.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "bangHasan",
   "license": "ISC"
 }

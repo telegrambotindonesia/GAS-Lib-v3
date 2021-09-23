@@ -1,13 +1,17 @@
 ## Versi
 
-## v4.0
+## v3.6
+
+- replyIt WithHTML, WithVoice, WithAudio, WithDocument, ...
+
+## v3.5
 
 - change: _prototype_  helper and button to _class_
 - publikasi class EventEmitter
 - shorthand `bot.tg` for `bot.telegram`
 - fix version number
 
-### v1.0
+### v3.1
 
 First public release
 on `10 Agustus 2021` / `1 Muharam 1443 H`

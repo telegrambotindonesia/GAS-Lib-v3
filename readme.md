@@ -30,7 +30,9 @@ bot.start(ctx => ctx.reply('Lets Go'));
 
 bot.cmd('ping', ctx => ctx.replyIt('Pong!'));
 
-bot.hears(/hello/i, ctx => ctx.replyIt('Hello too!'));
+bot.hears(/hello/i, ctx => ctx.reply('Hello too!'));
+
+bot.hears(/^\/say (.*)/i, ctx => ctx.replyIt(ctx.match[1]));
 ```
 
 ## Docs
