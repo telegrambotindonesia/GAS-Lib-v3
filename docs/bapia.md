@@ -1,9 +1,13 @@
 ## Histori
 
-### v.6
+### b.7
+
+- replyIt WithHTML, WithVoice, WithAudio, WithDocument, ...
+
+### b.6
 
 - Shorthand untuk `bot.tg`
 
-### v.5
+### b.5
 - Ganti prototype ke class
 - publikasi class EventEmitter
