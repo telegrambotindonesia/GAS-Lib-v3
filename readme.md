@@ -3,7 +3,7 @@
 Google Apps Script Library for Telegram, edition 3rd.
 
 
-![version](https://img.shields.io/badge/version-3.4-important) ![netifly](https://img.shields.io/netlify/76bd2cdb-6128-489b-9172-73f2aca1f978) ![GitHub last commit](https://img.shields.io/github/last-commit/telegrambotindonesia/GAS-Lib-v3) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/telegrambotindonesia/GAS-Lib-v3) ![GitHub issues](https://img.shields.io/github/issues/telegrambotindonesia/GAS-Lib-v3) ![GAS](https://img.shields.io/badge/google-apps%20script-blue) ![javascript](https://img.shields.io/badge/lang-javascript-yellow) ![telegram botindonesia](https://img.shields.io/badge/telegram-@botindonesia-blue) ![visit](https://badges.pufler.dev/visits/telegrambotindonesia/GAS-Lib-v3)
+![version](https://img.shields.io/badge/version-3.6-important) ![netifly](https://img.shields.io/netlify/76bd2cdb-6128-489b-9172-73f2aca1f978) ![GitHub last commit](https://img.shields.io/github/last-commit/telegrambotindonesia/GAS-Lib-v3) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/telegrambotindonesia/GAS-Lib-v3) ![GitHub issues](https://img.shields.io/github/issues/telegrambotindonesia/GAS-Lib-v3) ![GAS](https://img.shields.io/badge/google-apps%20script-blue) ![javascript](https://img.shields.io/badge/lang-javascript-yellow) ![telegram botindonesia](https://img.shields.io/badge/telegram-@botindonesia-blue) ![visit](https://badges.pufler.dev/visits/telegrambotindonesia/GAS-Lib-v3)
 
 ## ID Library
 
