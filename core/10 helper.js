@@ -189,6 +189,12 @@ class Button {
     inline(text, data, hide = false) {
         return { text, callback_data: data, hide }
     }
+    queryChat(text, data) {
+        return {
+            text,
+            switch_inline_query_current_chat: data
+        }
+    }
     query(text, data) {
         return {
             text,
