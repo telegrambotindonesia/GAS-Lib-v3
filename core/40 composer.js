@@ -32,7 +32,7 @@ class Composer extends EventEmitter {
     }
 
 
-    // -- konsep event
+    // -- konsep event trigger
 
     // command( ['anu', 'ani'], (ctx, next) => {})
     cmd(keys, callback) {

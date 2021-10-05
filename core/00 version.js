@@ -8,16 +8,24 @@ GAS Library untuk Telegram versi 3
 
 Adalah GAS Library untuk Telegram edisi ke tiga, merupakan suksesi
 dari GAS Library Telegram sebelumnya, edisi 1 dan edisi 2
-yang telah sukses banyak pemakainya.
+yang (alhamdulillah) banyak pemakainya.
 
 GAS Lib v3 ini terinspirasi dari Telegraf yang dirasa cukup praktis
-dalam penggunaan sehari-hari.
+dalam penggunaan sehari-hari dan banyak dilakukan penyesuaian.
 
-Support komunitas di Grup Telegram @botindonesia
-Kanal khusus GAS Indonesia @GASindonesia
+Support hanya via komunitas di Grup Telegram @botindonesia
+atau via issues GITHUB
+contact personal hanya untuk proyek, client, teman / sahabat, atau keluarga
+
+Kanal khusus info release @GASindonesia
+
+Docs URL: https://lumpia.js.org
+Donasi: https://saweria.co/hasanudinhs
+----------------
 
 Release public pertama kali : 
 - 10 Agustus 2021 / 1 Muharam 1443 H
+================
 
 */
 

@@ -1,3 +1,11 @@
+/*
+    Helper tambahan type markup
+    baik Keyboard biasa ataupun inline
+    --
+    jika rumit, gak usah dipakai
+    gunakan metode jadul saja
+*/
+
 class Markup {
     forceReply(value = true) {
         this.force_reply = value

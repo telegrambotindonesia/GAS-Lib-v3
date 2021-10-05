@@ -1,3 +1,11 @@
+/*
+    Handle request dan respon API Telegram
+    biasa disebut sebagai API Telegram Client
+
+    Otomatisasi params bertipe JSON dan Blob
+    tidak ada lagi pemisahan request dan requestForm
+*/
+
 // tipe data yang wajib bertipe JSON
 const FORM_DATA_JSON_FIELDS = [
     'results',
@@ -26,6 +34,7 @@ const BLOB_FIELDS = [
 
 ];
 
+// belum diimplementasikan
 const DEFAULT_EXTENSIONS = {
     audio: 'mp3',
     photo: 'jpg',
@@ -37,6 +46,7 @@ const DEFAULT_EXTENSIONS = {
 };
 
 class Client {
+    // v3 dipantek ke API Official
     constructor() {
         this.urlApi = 'https://api.telegram.org/bot';
     }
@@ -50,7 +60,6 @@ class Client {
         }
 
         try {
-
             let options = maybeBlob(data)
                 ? this.buildFormData(data)
                 : this.buildJSON(data);
@@ -100,7 +109,6 @@ class Client {
             payload
         };
     }
-
 }
 
 // metode baru deteksi
@@ -114,8 +122,8 @@ function isAttachBlob(payload) {
     return result;
 }
 
-// pakai metode ini
-// untuk meprediksi isinya blob atau bukan
+// saat ini: pakai metode yang ini
+// meprediksi isinya blob atau bukan
 function maybeBlob(payload) {
     if (!payload) return false;
     let result = false;
@@ -127,7 +135,7 @@ function maybeBlob(payload) {
 }
 
 // deteksi ada media kah
-// belum diimplementasikan
+// saat ini belum diimplementasikan
 function includesMedia(payload) {
     return Object.values(payload).some((value) => {
         if (Array.isArray(value)) {

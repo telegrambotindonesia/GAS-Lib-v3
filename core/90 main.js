@@ -1,6 +1,8 @@
 /*
     kelas utama gas lib v3
     matoa / bapia / lumpia
+
+    penjelasan detail cek docs lumpia.js.org
 */
 
 class Main extends Composer {

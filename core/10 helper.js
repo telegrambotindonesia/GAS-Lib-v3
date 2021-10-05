@@ -1,5 +1,9 @@
-class Helper {
+/*
+    helper untuk bantuan saat coding bot
+    tidak wajib dipakai, namun akan bermanfaat
+*/
 
+class Helper {
     /**
      * Checks if a given object has a property with a given name.
      *
@@ -52,6 +56,10 @@ class Helper {
         return value;
     }
 
+    /*
+    let a = [ 1, 2, 3];
+    console.log(helper.typeCheck(a)) // result: array
+    */
     typeCheck(value) {
         const return_value = Object.prototype.toString.call(value);
         // we can also use regex to do this...
@@ -62,10 +70,20 @@ class Helper {
         return type.toLowerCase();
     }
 
+    /*
+    let admin = [ 123, 456 ];
+    if (helper.isIn(admin, msg.from.id)) {
+        console.log('dia adalah admin!');
+    }
+    */
     isIn(array, index) {
         return (array.indexOf(index) > -1);
     }
 
+    /*
+    let data = { satu: 1, dua: 2};
+    helper.forEach(data, (isi, index) => console.log(index, isi));
+    */
     forEach(obj, fn) {
         // Don't bother if no value provided
         if (obj === null || typeof obj === 'undefined') {
@@ -93,6 +111,11 @@ class Helper {
         }
     }
 
+    // bantuan random Array dan Angka
+    /*
+    random(['aku', 'kamu', 'dia']) // hasil acakan dari aku, kamu, atau dia
+    random(0,100) // hasil acakan antara angka 1 - 100
+    */
     random() {
         // random(list) : item
         if (arguments.length === 1 && this.typeCheck(arguments[0]) == 'array') {
@@ -119,6 +142,8 @@ class Helper {
             .setContentType(mime);
     }
 
+    // output mode web app url yang diakses secara langsung
+    // -------
     outputText(text) {
         return ContentService.createTextOutput(text);
     }
@@ -130,6 +155,7 @@ class Helper {
     outputHTML(text) {
         return HtmlService.createHtmlOutput(text);
     }
+    // -------
 
     /**
     Membersihkan tag HTML
@@ -154,6 +180,7 @@ class Helper {
             .replace(/`/g, "\\`");
     }
 
+    // shorthand untuk field name
     nama(data) {
         let first = data.first_name;
 
@@ -175,12 +202,17 @@ class Helper {
         }
     }
 
+    // alias nama
     name(...args) {
         return this.nama(...args);
     }
 
 }
 
+/*
+    Bantuan cepat / pragmatis untuk keyboard inline
+    turunan dari versi 1/2 (untuk compabilitas)
+*/
 class Button {
     text(text, data, hide = false) {
         return { text, callback_data: data, hide }
@@ -189,6 +221,7 @@ class Button {
     inline(text, data, hide = false) {
         return { text, callback_data: data, hide }
     }
+    // akan tersedia v3.7
     queryChat(text, data) {
         return {
             text,

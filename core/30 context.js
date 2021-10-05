@@ -2,6 +2,7 @@
  * susun di sini 
  * method yang akan disertaan pada ctx
  * 
+ * tambahan replyIt{markup} shortcut atas respon biasa
 */
 
 class Context {
