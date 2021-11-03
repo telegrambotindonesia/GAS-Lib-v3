@@ -46,8 +46,8 @@ Release public pertama kali :
 const dev = false;
 
 //const active = 'alpha';
-const active = 'beta';
-// const active = 'stable';
+// const active = 'beta';
+const active = 'stable';
 
 const app = {
     alpha: {
@@ -58,7 +58,7 @@ const app = {
     },
     stable: {
         name: 'lumpia',
-        build: 6,
+        build: 7,
         id: {
             legacy: 'MUD_wfLskZT2D99lRXLh94vvg_do21SJR',
             new: '1Yo6vQRwjG5Gl9jeEF0g2tBTUa0XN5MyT4G_HeDpRr9DvabxhRcSdhPNj'
