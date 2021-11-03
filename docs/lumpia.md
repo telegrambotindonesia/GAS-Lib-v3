@@ -1,5 +1,10 @@
 ## Versi
 
+## v3.7
+
+- add options: `username`
+- helper: `button.queryChat`
+
 ## v3.6
 
 - replyIt WithHTML, WithVoice, WithAudio, WithDocument, ...

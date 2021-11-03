@@ -1,6 +1,6 @@
 ## Histori
 
-### b.8
+### b.10
 
 - add options: `username`
 - helper: `button.queryChat`
