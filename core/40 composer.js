@@ -45,6 +45,7 @@ class Composer extends EventEmitter {
     }
 
     start(callback) {
+        let username = this.options.username;
         let regex = new RegExp(`^(?<cmd>[${escapeRegExp(this.options.prefix_command)}]start(?:@${username})?)\\s?(?<payload>.+)?`, 'i');
         return this.addTrigger('text', regex, callback);
     }
