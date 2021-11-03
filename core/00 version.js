@@ -45,9 +45,9 @@ Release public pertama kali :
 
 const dev = false;
 
-//const active = 'alpha';
-// const active = 'beta';
-const active = 'stable';
+// const active = 'alpha';
+const active = 'beta';
+// const active = 'stable';
 
 const app = {
     alpha: {
