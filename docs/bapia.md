@@ -1,5 +1,10 @@
 ## Histori
 
+### b.8
+
+- add options: `username`
+- helper: `button.queryChat`
+
 ### b.7
 
 - replyIt WithHTML, WithVoice, WithAudio, WithDocument, ...

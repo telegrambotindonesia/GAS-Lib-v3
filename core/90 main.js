@@ -11,6 +11,7 @@ class Main extends Composer {
         this.ctx = false;
         this.options = {
             prefix_command: '/',
+            username: '',
             ...options
         }
         this.telegram = new Telegram(token);

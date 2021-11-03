@@ -45,7 +45,7 @@ class Composer extends EventEmitter {
     }
 
     start(callback) {
-        let regex = new RegExp(`^(?<cmd>[${escapeRegExp(this.options.prefix_command)}]start)\\s?(?<payload>.+)?`, 'i');
+        let regex = new RegExp(`^(?<cmd>[${escapeRegExp(this.options.prefix_command)}]start(?:@${username})?)\\s?(?<payload>.+)?`, 'i');
         return this.addTrigger('text', regex, callback);
     }
 
@@ -141,6 +141,8 @@ class Composer extends EventEmitter {
 
     setRegex(keys, prefix = false) {
         if (!Array.isArray(keys)) keys = [keys];
+        let username = this.options.username;
+
         return keys.map((key) => {
             if (!key) {
                 throw new Error('Invalid trigger');
@@ -160,7 +162,7 @@ class Composer extends EventEmitter {
             }
 
             let regex = prefix
-                ? new RegExp(`^[${escapeRegExp(this.options.prefix_command)}]${escapeRegExp(key)}$`, 'i')
+                ? new RegExp(`^[${escapeRegExp(this.options.prefix_command)}]${escapeRegExp(key)}(?:@${username})?$`, 'i')
                 : new RegExp(`^${escapeRegExp(key)}$`);
             return regex;
         });
