@@ -46,8 +46,8 @@ Release public pertama kali :
 const dev = false;
 
 //const active = 'alpha';
-//const active = 'beta';
 const active = 'beta';
+// const active = 'stable';
 
 const app = {
     alpha: {
@@ -66,7 +66,7 @@ const app = {
     },
     beta: {
         name: 'bapia',
-        build: 9,
+        build: 11,
         id: {
             legacy: 'M2iDAxzI3JJ4n6a8sryWJsfvg_do21SJR',
             new: '1OSN8eNlJtw2ehf3ul7h48Jb8rdeljKhC5Rw3cJo4nkEFITdS01Di0N_S'
