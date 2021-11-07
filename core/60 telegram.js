@@ -481,8 +481,8 @@ class Telegram extends Client {
             ...extra,
         });
     }
-    answerCallbackQuery(...args) { 
-        return this.answerCbQuery(...args); 
+    answerCallbackQuery(...args) {
+        return this.answerCbQuery(...args);
     }
     answerGameQuery(callbackQueryId, url) {
         return this.callApi('answerCallbackQuery', {
@@ -752,5 +752,35 @@ class Telegram extends Client {
      */
     close() {
         return this.callApi('close', {});
+    }
+
+    // Bot API 5.4
+
+    /**
+     * 
+     * Use this method to approve a chat join request. 
+     * The bot must be an administrator in the chat for this to work and must have the can_invite_users administrator right.
+     * Returns True on success.
+     */
+    approveChatJoinRequest(chatId, userId, extra) {
+        return this.callApi('approveChatJoinRequest', {
+            chat_id: chatId,
+            user_id: userId,
+            ...extra,
+        });
+    }
+
+    /**
+     * 
+     * Use this method to decline a chat join request. 
+     * The bot must be an administrator in the chat for this to work and must have the can_invite_users administrator right. 
+     * Returns True on success.
+     */
+    declineChatJoinRequest(chatId, userId, extra) {
+        return this.callApi('declineChatJoinRequest', {
+            chat_id: chatId,
+            user_id: userId,
+            ...extra,
+        });
     }
 }

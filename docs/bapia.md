@@ -1,5 +1,14 @@
 ## Histori
 
+### b.12
+
+Bot API 5.4
+
+Add methods :
+
+- approveChatJoinRequest
+- declineChatJoinRequest
+
 ### b.11
 
 - add options: `username`

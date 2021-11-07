@@ -1,5 +1,15 @@
 ## Versi
 
+## v3.8
+
+**Bot API 5.4**
+
+Add methods :
+
+- approveChatJoinRequest
+- declineChatJoinRequest
+
+
 ## v3.7
 
 - add options: `username`
