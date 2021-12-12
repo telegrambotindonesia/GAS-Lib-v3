@@ -783,4 +783,32 @@ class Telegram extends Client {
             ...extra,
         });
     }
+
+    /**
+     * Use this method to ban a channel chat in a supergroup or a channel. 
+     * Until the chat is unbanned, the owner of the banned chat won't be able to send messages on behalf of any of their channels. 
+     * The bot must be an administrator in the supergroup or channel for this to work and must have the appropriate administrator rights. 
+     * Returns True on success.
+     */
+    banChatSenderChat(chatId, senderChatId, extra) {
+        return this.callApi('banChatSenderChat', {
+            chat_id: chatId,
+            sender_chat_id: senderChatId,
+            ...extra,
+        });
+    }
+
+    /**
+     * Use this method to unban a previously banned channel chat in a supergroup or channel. 
+     * The bot must be an administrator for this to work and must have the appropriate administrator rights. 
+     * Returns True on success.
+     */
+    unbanChatSenderChat(chatId, senderChatId, extra) {
+        return this.callApi('unbanChatSenderChat', {
+            chat_id: chatId,
+            sender_chat_id: senderChatId,
+            ...extra,
+        });
+    }
+
 }

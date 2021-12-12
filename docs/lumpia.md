@@ -1,5 +1,14 @@
 ## Versi
 
+## v3.9
+
+Bot API 5.5
+
+- banChatSenderChat
+- unbanChatSenderChat
+
+Ref: [https://core.telegram.org/bots/api#december-7-2021](https://core.telegram.org/bots/api#december-7-2021)
+
 ## v3.8
 
 **Bot API 5.4**

@@ -58,7 +58,7 @@ const app = {
     },
     stable: {
         name: 'lumpia',
-        build: 8,
+        build: 9,
         id: {
             legacy: 'MUD_wfLskZT2D99lRXLh94vvg_do21SJR',
             new: '1Yo6vQRwjG5Gl9jeEF0g2tBTUa0XN5MyT4G_HeDpRr9DvabxhRcSdhPNj'
@@ -66,7 +66,7 @@ const app = {
     },
     beta: {
         name: 'bapia',
-        build: 12,
+        build: 13,
         id: {
             legacy: 'M2iDAxzI3JJ4n6a8sryWJsfvg_do21SJR',
             new: '1OSN8eNlJtw2ehf3ul7h48Jb8rdeljKhC5Rw3cJo4nkEFITdS01Di0N_S'

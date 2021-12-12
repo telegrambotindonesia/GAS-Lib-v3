@@ -1,5 +1,12 @@
 ## Histori
 
+### b.13
+
+Bot API 5.5
+
+- banChatSenderChat
+- unbanChatSenderChat
+
 ### b.12
 
 Bot API 5.4
