@@ -1,5 +1,10 @@
 ## Versi
 
+## v3.11
+
+- fix typo _banChatMember_
+
+
 ## v3.10
 
 - Context Method: 
