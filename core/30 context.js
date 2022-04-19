@@ -281,10 +281,10 @@ class Context {
     /**
      * @see https://core.telegram.org/bots/api#banchatmember
      */
-    kickChatMember(...args) {
+    /* kickChatMember(...args) {
         this.assert(this.chat, 'kickChatMember');
         return this.telegram.kickChatMember(this.chat.id, ...args);
-    }
+    } */
     /**
      * @see https://core.telegram.org/bots/api#unbanchatmember
      */
@@ -696,33 +696,33 @@ class Context {
     /**
       * @see https://core.telegram.org/bots/api#approvechatjoinrequest
      */
-    approveChatJoinRequest(userId, extra) {
+    approveChatJoinRequest(...args) {
         this.assert(this.chat, 'approveChatJoinRequest');
-        return this.telegram.approveChatJoinRequest(message.chat.id, userId, extra);
+        return this.telegram.approveChatJoinRequest(message.chat.id, ...args);
     }
 
     /**
    * @see https://core.telegram.org/bots/api#declinechatjoinrequest
    */
-    declineChatJoinRequest(userId, extra) {
+    declineChatJoinRequest(...args) {
         this.assert(this.chat, 'declineChatJoinRequest');
-        return this.telegram.declineChatJoinRequest(message.chat.id, userId, extra);
+        return this.telegram.declineChatJoinRequest(message.chat.id, ...args);
     }
 
     /**
      * @see https://core.telegram.org/bots/api#banchatsenderchat
      */
-    banChatSenderChat(senderChatId, extra) {
+    banChatSenderChat(...args) {
         this.assert(this.chat, 'banChatSenderChat')
-        return this.telegram.banChatSenderChat(this.chat.id, senderChatId, extra);
+        return this.telegram.banChatSenderChat(this.chat.id, ...args);
     }
 
     /**
      * @see https://core.telegram.org/bots/api#unbanchatsenderchat
      */
-    unbanChatSenderChat(senderChatId, extra) {
+    unbanChatSenderChat(...args) {
         this.assert(this.chat, 'unbanChatSenderChat')
-        return this.telegram.unbanChatSenderChat(this.chat.id, senderChatId, extra);
+        return this.telegram.unbanChatSenderChat(this.chat.id, ...args);
     }
 
 }

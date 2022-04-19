@@ -8,7 +8,8 @@
     - declineChatJoinRequest()
     - banChatSenderChat()
     - unbanChatSenderChat()
-- Helper: Markup formatHTML handling spoiler    
+- Helper: Markup formatHTML handling spoiler
+- Deprecate kickChatMember in favour of banChatMember
 
 ## v3.9
 

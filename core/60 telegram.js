@@ -347,11 +347,10 @@ class Telegram extends Client {
      * @param chatId Unique identifier for the target group or username of the target supergroup or channel (in the format `@channelusername`)
      * @param untilDate Date when the user will be unbanned, unix time. If user is banned for more than 366 days or less than 30 seconds from the current time they are considered to be banned forever
      */
-    kickChatMember(chatId, userId, untilDate, extra) {
+    banChatMember(chatId, userId, untilDate, extra) {
         return this.callApi('kickChatMember', {
             chat_id: chatId,
             user_id: userId,
-            until_date: untilDate,
             ...extra,
         });
     }
