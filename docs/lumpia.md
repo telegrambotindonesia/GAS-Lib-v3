@@ -1,5 +1,15 @@
 ## Versi
 
+## v3.10
+
+- Context handle: chatJoinRequest (`ctx.chatJoinRequest`)
+- Context Method: 
+    - approveChatJoinRequest()
+    - declineChatJoinRequest()
+    - banChatSenderChat()
+    - unbanChatSenderChat()
+- Helper: Markup formatHTML handling spoiler    
+
 ## v3.9
 
 Bot API 5.5

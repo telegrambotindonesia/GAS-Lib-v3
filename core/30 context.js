@@ -70,6 +70,11 @@ class Context {
     get senderChat() {
         return getMessageFromAnySource(this)?.sender_chat;
     }
+
+    get chatJoinRequest() {
+        return this.update.chat_join_request
+    }
+
     get from() {
         return (
             this.callbackQuery ??
@@ -79,6 +84,7 @@ class Context {
             this.chosenInlineResult ??
             this.chatMember ??
             this.myChatMember ??
+            this.chatJoinRequest ??
             getMessageFromAnySource(this)
         )?.from;
     }
@@ -686,6 +692,39 @@ class Context {
         this.assert(message, 'copyMessage');
         return this.telegram.copyMessage(chatId, message.chat.id, message.message_id, extra);
     }
+
+    /**
+      * @see https://core.telegram.org/bots/api#approvechatjoinrequest
+     */
+    approveChatJoinRequest(userId, extra) {
+        this.assert(this.chat, 'approveChatJoinRequest');
+        return this.telegram.approveChatJoinRequest(message.chat.id, userId, extra);
+    }
+
+    /**
+   * @see https://core.telegram.org/bots/api#declinechatjoinrequest
+   */
+    declineChatJoinRequest(userId, extra) {
+        this.assert(this.chat, 'declineChatJoinRequest');
+        return this.telegram.declineChatJoinRequest(message.chat.id, userId, extra);
+    }
+
+    /**
+     * @see https://core.telegram.org/bots/api#banchatsenderchat
+     */
+    banChatSenderChat(senderChatId, extra) {
+        this.assert(this.chat, 'banChatSenderChat')
+        return this.telegram.banChatSenderChat(this.chat.id, senderChatId, extra);
+    }
+
+    /**
+     * @see https://core.telegram.org/bots/api#unbanchatsenderchat
+     */
+    unbanChatSenderChat(senderChatId, extra) {
+        this.assert(this.chat, 'unbanChatSenderChat')
+        return this.telegram.unbanChatSenderChat(this.chat.id, senderChatId, extra);
+    }
+
 }
 
 function getMessageFromAnySource(ctx) {

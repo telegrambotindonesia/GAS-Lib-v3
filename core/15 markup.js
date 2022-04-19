@@ -212,6 +212,9 @@ class Markup {
                     case 'text_link':
                         result.push(`<a href="${entity.url}">`)
                         break
+                    case 'spoiler':
+                        result.push('<span class="tg-spoiler">')
+                        break
                 }
                 opened.unshift(entity)
                 available.splice(index, 1)
@@ -251,6 +254,9 @@ class Markup {
                     case 'text_mention':
                     case 'text_link':
                         result.push('</a>')
+                        break
+                    case 'spoiler':
+                        result.push('</span>')
                         break
                 }
                 opened.splice(index, 1)
