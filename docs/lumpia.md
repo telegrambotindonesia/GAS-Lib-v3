@@ -2,14 +2,16 @@
 
 ## v3.10
 
-- Context handle: chatJoinRequest (`ctx.chatJoinRequest`)
 - Context Method: 
+    - chatJoinRequest (`ctx.chatJoinRequest`)
     - approveChatJoinRequest()
     - declineChatJoinRequest()
     - banChatSenderChat()
     - unbanChatSenderChat()
-- Helper: Markup formatHTML handling spoiler
-- Deprecate kickChatMember in favour of banChatMember
+    - banChatMember()
+- Telegram Class: banChatMember
+- Helper: Markup `formatHTML` handling spoiler
+- Deprecate `kickChatMember` in favour of `banChatMember`
 
 ## v3.9
 

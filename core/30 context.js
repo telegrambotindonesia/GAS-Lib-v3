@@ -281,10 +281,10 @@ class Context {
     /**
      * @see https://core.telegram.org/bots/api#banchatmember
      */
-    /* kickChatMember(...args) {
-        this.assert(this.chat, 'kickChatMember');
+    banChatMember(...args) {
+        this.assert(this.chat, 'banChatMember');
         return this.telegram.kickChatMember(this.chat.id, ...args);
-    } */
+    }
     /**
      * @see https://core.telegram.org/bots/api#unbanchatmember
      */
