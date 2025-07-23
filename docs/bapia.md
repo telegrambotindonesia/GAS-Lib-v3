@@ -1,5 +1,11 @@
 ## Histori
 
+
+## b.14
+
+Banyak sekali, doc nya belum yak :-D
+Perubahan utama ada di file `context.js` dan `telegram.js`
+
 ### b.13
 
 Bot API 5.5

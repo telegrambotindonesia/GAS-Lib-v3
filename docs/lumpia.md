@@ -1,8 +1,13 @@
 ## Versi
 
+## v3.11
+
+Banyak sekali, doc nya belum yak :-D
+Perubahan utama ada di file `context.js` dan `telegram.js`
+
 ## v3.10
 
-- Context Method: 
+- Context Method:
     - chatJoinRequest (`ctx.chatJoinRequest`)
     - approveChatJoinRequest()
     - declineChatJoinRequest()
@@ -56,4 +61,3 @@ on `10 Agustus 2021` / `1 Muharam 1443 H`
 - [x] Checkpoint
 - **Lumpia** - Stable v1.0
 - **Bapia** - Beta v4.0
-

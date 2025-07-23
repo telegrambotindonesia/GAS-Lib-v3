@@ -1,17 +1,17 @@
 /**
  * Simple Class handling user properties sebagai userDB
- * 
+ *
  * Hasanudin H. Syafaat
  * TG @hasanudinhs
- * Email banghasan@gmail.com
- * 
+ * Email banghasan@orang.paling.cakep.seantero.web.id
+ *
  * Support hanya di grup Telegram @botIndonesia
- * 
-*/
+ *
+ */
 var userDB = class UserDB {
   /**
-*initialize constructor
-*/
+   *initialize constructor
+   */
   constructor() {
     this.service = PropertiesService.getUserProperties();
   }
@@ -46,4 +46,4 @@ var userDB = class UserDB {
   deleteAll() {
     return this.service.deleteAllProperties();
   }
-}
+};
